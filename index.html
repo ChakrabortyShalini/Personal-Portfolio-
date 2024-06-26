@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalini Chakraborty's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm Shalini Chakraborty, a web developer specialized in frontend development.</p>
+    </section>
+    
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h1>projects</h1>
+        <div class="project">
+            <h2>Portfolio Website</h2>
+            <p>Designed and developed a personal portfolio website using 
+HTML, CSS, and JavaScript to showcase my projects and skills. Implemented
+responsive design toensure compatibility across devices.</p>
+        </div>
+        <div class="project">
+            <h2>URl Shortener</h2>
+            <p>Developed a web application using HTML, CSS, and 
+JavaScript to convert long URLs into shortened links. Implemented input validation, 
+dynamic link generation, and responsive design for better user experience.</p>
+        </div>
+      <div class="project">
+            <h2>Resume Project</h2>
+            <p>This project is a personal resume website built with HTML, CSS, and JavaScript. It 
+features a responsive design, interactive elements, and modern styling to showcase my
+profile. The website includes sections for my bio, skills, education, projects, and contact 
+information. Key highlights are a smooth navigation menu, a project gallery. The main 
+goal is to present my skills attractively.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
