@@ -108,10 +108,42 @@ h2 {
 #clear-search:hover {
     background-color: #555;
 }
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-media {
+    margin: 10px 0;
+}
+
+.contact-info h4, .social-media h4 {
+    margin-bottom: 10px;
+}
+
+.contact-info p, .social-media a {
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
 
 footer {
     background-color: #333;
-    color: white;
+    color: b;
     text-align: center;
     padding: 10px 0;
     flex-shrink: 0;
