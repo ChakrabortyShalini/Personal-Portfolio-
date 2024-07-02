@@ -95,5 +95,55 @@ document.addEventListener('DOMContentLoaded', () => {
         filterProjects(''); // Show all projects
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        // Validate form
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (validateForm(name, email, message)) {
+            // If validation passes, you can submit the form data via AJAX or any other method here
+            console.log('Form submitted');
+            alert('Thank you for your message! I will get back to you soon.');
+            form.reset(); // Clear the form
+        }
+    });
+});
+
+function validateForm(name, email, message) {
+    let valid = true;
+    
+    // Simple validation checks
+    if (name === '') {
+        alert('Name is required');
+        valid = false;
+    }
+    
+    if (email === '') {
+        alert('Email is required');
+        valid = false;
+    } else if (!validateEmail(email)) {
+        alert('Please enter a valid email address');
+        valid = false;
+    }
+    
+    if (message === '') {
+        alert('Message is required');
+        valid = false;
+    }
+    
+    return valid;
+}
+
+function validateEmail(email) {
+    // Basic email pattern for validation
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+}
 
 
